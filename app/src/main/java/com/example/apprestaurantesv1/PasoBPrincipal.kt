@@ -57,7 +57,7 @@ class PasoBPrincipal : Fragment(), PasoGRestaurantAdapter.OnItemListener {
     private fun initRecyclerView() {
         adapter = PasoGRestaurantAdapter(variableres,this)
 
-        binding.rvRestaurants.layoutManager = LinearLayoutManager(activity)
+        binding.rvRestaurants.layoutManager = LinearLayoutManager(context)
         binding.rvRestaurants.adapter = adapter
 
         //findViewById<RecyclerView>(R.id.rvRestaurants).layoutManager = LinearLayoutManager(this)
